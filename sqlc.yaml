@@ -1,0 +1,9 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "./app/shopping/repository/query/"
+    schema: "./app/shopping/repository/schema/"
+    gen:
+      go:
+        package: "repository"
+        out: "./app/shopping/repository"
