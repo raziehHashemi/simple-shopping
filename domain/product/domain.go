@@ -2,7 +2,6 @@ package product
 
 import (
 	"github.com/google/uuid"
-	"golang.org/x/net/context"
 )
 
 type color string
@@ -27,7 +26,7 @@ type ProductUsecase interface {
 }
 
 type ProductRepository interface {
-	Add(pet Pet) error
+	Add(product Product) error
 	GetAll() error
 	Get(productId uuid.UUID) error
 }
